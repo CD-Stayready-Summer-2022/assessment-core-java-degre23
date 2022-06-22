@@ -3,11 +3,16 @@ package com.codedifferently.assessment01.part01;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static com.codedifferently.assessment01.part01.BasicStringUtils.convertString;
+
 public class BasicStringUtilsTest {
     @Test
     public void camelCaseTest01() {
+
+        convertString("the quick brown fox");
+
         // Given
-        String input = "the quick brown fox";
+        String input = convertString("the quick brown fox");
         String expected = "TheQuickBrownFox";
 
         // When

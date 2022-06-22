@@ -1,6 +1,7 @@
 package com.codedifferently.assessment01.part02;
 
 public class Cat extends Pet {
+
     /**
      * @param name name of this Cat
      * @param age age of this Cat
@@ -21,7 +22,6 @@ public class Cat extends Pet {
     public Cat(String name) {
 
     }
-
     /**
      * nullary constructor
      * by default, a Cat's

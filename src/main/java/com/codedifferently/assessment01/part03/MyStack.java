@@ -1,18 +1,31 @@
 package com.codedifferently.assessment01.part03;
 
+import java.util.ArrayList;
 import java.util.EmptyStackException;
+import java.util.List;
 
 public class MyStack<T>{
 
-    public boolean isEmpty() { return false; }
+    private List<T> s = new ArrayList<T>();
 
-    public void push(T i) { }
-
-    public T pop() throws EmptyStackException {
-        return null;
+    public boolean isEmpty() {
+        return true;
     }
 
-    public T peek() { return null; }
+    public void push(T i) {
+        s.add(i);
+    }
+
+    public T pop() throws EmptyStackException {
+        if ( s.isEmpty()){
+            throw new IllegalStateException();
+        }
+        return s.remove(0);
+    }
+
+    public T peek() {
+        return null;
+    }
 
     public Integer size(){
         return null;
